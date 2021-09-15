@@ -40,7 +40,7 @@ function calculateTotal() {
     const tax = subTotal * 0.1;
     const grandTotal = subTotal + tax;
 
-    document.getElementById('sub-total').innerText = subTotal;
-    document.getElementById('tax').innerText = tax;
-    document.getElementById('grand-total').innerText = grandTotal;
+    document.getElementById('sub-total').innerText = parseFloat(subTotal).toFixed(2);
+    document.getElementById('tax').innerText = parseFloat(tax).toFixed(2);
+    document.getElementById('grand-total').innerText = parseFloat(grandTotal).toFixed(2);
 }
